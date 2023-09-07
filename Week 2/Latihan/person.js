@@ -18,7 +18,10 @@ const Person = (fullName = "unknown", age = 25, isMale = false, avatar) => {
         rename: (newName) => {
             fullName = newName;
         },
-        ...{ fullName, age, isMale, avatar },
+        fullName,
+        age,
+        isMale,
+        avatar,
     };
 };
 
